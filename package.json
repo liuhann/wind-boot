@@ -1,0 +1,26 @@
+{
+  "name": "wind-boot",
+  "version": "1.0.0",
+  "description": "Boot loader for a koa-based modularized application booter",
+  "main": "src/bootstrap.js",
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "keywords": [
+    "koa",
+    "boot",
+    "modularized"
+  ],
+  "author": {
+    "name": "刘晗",
+    "email": "liuhann@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^3.9.0",
+    "get-port": "^5.1.1"
+  },
+  "dependencies": {
+    "koa": "^2.12.0"
+  }
+}
