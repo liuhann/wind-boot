@@ -141,7 +141,9 @@ class BootStrap {
      * @return {Promise<void>}
      */
     async packagesReady() {
-        for (const packageModule of this.app.packages) {
+        // 按模块添加次序顺讯运行
+        for (let i = 0; i < this.app.packages.length; i++) {
+            const packageModule = this.app.packages[i];
             // 前面出错的模块不再继续执行
             if (packageModule.err) {
                 continue;
@@ -165,6 +167,8 @@ class BootStrap {
      * @return {Promise<void>}
      */
     async bootComplete() {
+
+        // 结束时按模块次序反向执行。保证前面的模块最后收尾
         for (let i = this.app.packages.length - 1; i >= 0; i--) {
             const packageModule = this.app.packages[i];
 
