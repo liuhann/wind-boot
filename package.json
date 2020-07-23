@@ -1,6 +1,6 @@
 {
   "name": "wind-boot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Boot loader for a koa-based modularized application booter",
   "main": "src/bootstrap.js",
   "scripts": {
