@@ -22,5 +22,8 @@
   },
   "dependencies": {
     "koa": "^2.12.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
   }
 }
